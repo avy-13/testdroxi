@@ -36,6 +36,12 @@ jobs:
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
+    - name: Create Trello state file for login
+      run: |
+        echo '${{ secrets.LOGIN }}' > Trello_state.json
+      env:
+        TRELLO_CREDS: ${{ secrets.LOGIN }}
+
     - name: Create Trello credentials file
       run: |
         echo '${{ secrets.TRELLO_CREDS }}' > Trello_creds.json
