@@ -1,0 +1,8 @@
+google-api-python-client 
+google-auth-httplib2 
+google-auth-oauthlib
+playwright~=1.53.0
+pytest-check
+pytest~=8.4.1
+requests~=2.32.4
+allure-pytest

@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python/
+build/
+dist/
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+
+# Allure Reports (if you generate them locally)
+allure-results/
+allure-report/
+
+# Local credentials/tokens (CRITICAL: DO NOT COMMIT SENSITIVE INFO)
+token.json
+credentials.json
+Trello_creds.json
