@@ -30,6 +30,12 @@ jobs:
     - name: Install Playwright browsers
       run: playwright install --with-deps
 
+    - name: Create Google credentials file
+      run: |
+        echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+
     - name: Create Trello credentials file
       run: |
         echo '${{ secrets.TRELLO_CREDS }}' > Trello_creds.json
